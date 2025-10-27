@@ -11,6 +11,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+       
+      - name: Install pandas
+        run: pip install pandas
 
       - name: Run extract.py
         run: python extract.py
